@@ -1,7 +1,6 @@
 
 test: install
-	@rm -rf **/*.pyc
-	@pyenv/bin/nosetests --with-coverage --cover-package=jsongraph --cover-erase
+	@pyenv/bin/nosetests --with-coverage --cover-package=mqlparser --cover-erase
 
 install: pyenv/bin/python
 
@@ -15,4 +14,4 @@ upload: clean install
 	pyenv/bin/python setup.py sdist bdist_wheel upload
 
 clean:
-	rm -rf pyenv jsongraph.egg-info dist build
+	rm -rf pyenv mqlparser.egg-info dist build

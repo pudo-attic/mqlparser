@@ -5,6 +5,8 @@ Google). The class will accept a query object and provide a parse tree
 that can be used to build queries against a variety of backends (e.g.
 SQL, SPARQL or another web service).
 
+Specification: [Metaweb Query Language](http://mql.freebaseapps.com/ch03.html).
+
 ## Tests
 
 The test suite will usually be executed in it's own ``virtualenv`` and perform a
